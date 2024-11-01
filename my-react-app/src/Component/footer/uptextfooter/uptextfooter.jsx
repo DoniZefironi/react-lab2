@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './uptextfooter.css';
 
-class UpTextFooter extends Component {
-  render() {
-    const { organization } = this.props;
+export default function uptextfooter(){
     return (
 <div class="uptextfooter">
 <div class="contactus">
@@ -33,6 +31,4 @@ class UpTextFooter extends Component {
 </div>
     );
   }
-}
 
-export default UpTextFooter;

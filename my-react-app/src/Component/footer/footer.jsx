@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import UpTextFooter from './uptextfooter/uptextfooter';
 import DownFooter from './downfooter/downfooter';
 import './footer.css';
 
-class Footer extends Component {
-  render() {
-    const { organization } = this.props;
+export default function Footer(){
     return (
         <footer>
         <div class="imgfooter">
@@ -17,6 +15,3 @@ class Footer extends Component {
     </footer>
     );
   }
-}
-
-export default Footer;

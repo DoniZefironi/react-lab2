@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './placecomponent.css';
 import photo1 from '../image/placebottom.png';
 
-class PlaceComponent extends Component {
-  render() {
+export default function PlaceComponent(){
     const { organization } = this.props;
     const photos = [
       {
@@ -42,6 +41,3 @@ class PlaceComponent extends Component {
       </div>
     );
   }
-}
-
-export default PlaceComponent;

@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './downtextfooter.css';
 
-class DownFooter extends Component {
-  render() {
+export default function DownFooter(){
     const { organization } = this.props;
     return (
         <div class="downfooter">
@@ -13,6 +12,3 @@ class DownFooter extends Component {
     </div>
     );
   }
-}
-
-export default DownFooter;

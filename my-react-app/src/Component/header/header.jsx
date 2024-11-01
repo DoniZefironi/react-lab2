@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import HeaderBlock from './headerblock/headerblock';
 import './header.css';
 
-class Header extends Component {
-  render() {
-    const { organization } = this.props;
+export default function Header({organization}){
     return (
       <header>
         <a className="ah1a" href="/glav/index.html">{organization}</a>
@@ -17,6 +15,3 @@ class Header extends Component {
       </header>
     );
   }
-}
-
-export default Header;

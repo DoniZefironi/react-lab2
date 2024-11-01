@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
-import './headerblock.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-    class HeaderBlock extends Component {
-        render() {
-            const { organization } = this.props;
+export default function HeaderBlock(){
   return (
     <div className="header-block1" id="headerBlock">
     <nav className="header-nav">
       <a href="#place" id="home">HOME</a>
-      <a href="#gheter" id="about">ABOUT US</a>
+      <Link to="/placecomponent">ABOUT US</Link>
       <a href="#themenu" id="menus">MENU</a>
       <a href="#honest" id="drinkmenu">DRINKS MENU</a>
       <a href="#diners" id="contact">CONTACTS</a>
@@ -24,6 +22,3 @@ import './headerblock.css';
   </div>
   );
 }
-};
-
-export default HeaderBlock;
